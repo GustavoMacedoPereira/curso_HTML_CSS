@@ -54,7 +54,7 @@ def lista():
 def link():
     return render_template("index010.html")
 
-#Deu certo
+print('Deu certo')
 
 if __name__ == "__main__":
     app.run(debug=True)
