@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{{url_for('static', filename='meu_logo_re.ico')}}" type="image/x-icon">
+    <title>Favicon</title>
+    <style>
+            a {
+                text-decoration: none;
+    </style>
+</head>
+<body>
+    <p>
+        <a href="http://127.0.0.1:5000/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/contacts">contatos</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Introdução">introdução</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Parágrafos">Parágrafos</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Simbolos e emojis">Simbolos e emojis</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/static">static</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/favorito">favorito</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/títulos">títulos</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Formatação">Formatação</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Marcação de texto">Marcação de texto</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/outras formatações">Outras formatações</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Listas">Listas</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Links">Links</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p>Testando meu favicon</p>
+    <img src="{{url_for('static',filename='meu_logo_re.png')}}" alt="meu logo"><br>
+    <h1>FAVICON</h1>
+    <p>Favicons ou ícones de favoritos, são aqueles icones que aparecem no cabeçalho da página</p>
+    <p>Esses são alguns exemplos: <img src="{{url_for('static', filename='exp_favicon.png')}}" alt="Exemplo de favicons"></p>
+    <p>* Para colocar o ícone de favoritos na aba da janela, é preferencial que o arquivo se chame "favicon.ico"
+        <br>
+        * Também é importante que coloque ele acima da tag &lt;title&gt; &lt;/title&gt;
+        <br>
+        * Da seguinte forma: &lt;link rel="shortcut icon" href="caminho do arquivo" type="image/x-icon&gt;
+        <br>
+        * Para Fazer isso usando flask consulte a <a href="https://flask.palletsprojects.com/en/2.3.x/patterns/favicon/"target="_blank">documentação flask</a></p>
+</body>
+</html>

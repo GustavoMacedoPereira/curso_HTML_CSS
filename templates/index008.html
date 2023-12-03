@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{{url_for('static', filename='meu_logo_re.ico')}}" type="image/x-icon">
+    <title>Marcação de texo</title>
+    <style>
+            a {
+                text-decoration: none;
+                }
+    </style>
+</head>
+<body>
+<p>
+        <a href="http://127.0.0.1:5000/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/contacts">contatos</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Introdução">introdução</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Parágrafos">Parágrafos</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Simbolos e emojis">Simbolos e emojis</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/static">static</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/favorito">favorito</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/títulos">títulos</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Formatação">Formatação</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Marcação de texto">Marcação de texto</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/outras formatações">Outras formatações</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Listas">Listas</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Links">Links</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <h1>MARCA TEXTO</h1>
+    <img src="{{url_for('static',filename='marca texto.png')}}" alt="Marca texto" width="150" height="200">
+    <hr>
+    <p>Para deixar uma parte do texto marcado em uma cor especial para dar <mark>ATENÇÃO</mark> ao texto usamos a tag &lt;mark&gt;&lt;/mark&gt;</p>
+    <p>Para alterar a cor de fundo de uma tag mark, fazemos isso dentro da própria tag: <mark style="background-color: orange;">&lt;mark style="background-color;"&gt;fundo laranja&lt;/mark&gt;</mark></p>
+    <p>Para saber mais sobre cores de fundo acesse <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/background-color"target="_blank">developer.mozilla.org</a></p>
+    <h2>Texto grande e texto pequeno</h2>
+    <p>Para deixar um texto grande, embora não usual, podemos usar a tag <big>&lt;big&gt;GRANDE&lt;/big&gt;</big></p>
+    <p>E para deixar um texto pequeno para por exemplo usar no rodapé do site, usamos a tag <small>&lt;samll&gt;samll&lt;/samll&gt;</small></p>
+    <h2>Texto excluído</h2>
+    <p>Para marcar um texto como excluído, ou seja: com um risco em cima dele, usamos a tag <del>&lt;del&gt;del&lt;/del&gt;</del></p>
+    <h2>Texto inserido</h2>
+    <p>Para marcar um texto como se fosse um ponto de atenção e sublinha-lo, podemos fazer da seguinte forma:</p>
+    <p><ins>&lt;ins&gt;ins&lt;/ins&gt;</ins> que é uma tag HTML</p>
+    <p>OU</p>
+    <p><u>&lt;u&gt;u&lt;/u&gt;</u> que é uma tag CSS</p>
+    <h2>Texto sobrescrito</h2>
+    <p><sup>&lt;sup&gt;sup&lt;/sup&gt;</sup> Que coloca algum valor a cima. Exemplo: 2<sup>2</sup>=4</p>
+    <p><sub>&lt;sub&gt;sub&lt;/sub&gt;</sub> Que coloca algum valor a baixo. Exemplo: H<sub>2</sub>O</p>
+</body>
+</html>

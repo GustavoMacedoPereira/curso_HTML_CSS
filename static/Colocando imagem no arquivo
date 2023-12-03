@@ -1,0 +1,16 @@
+Para colocar uma imagem dentro de alguma arquivo html ou css usando flask deve-se seguir
+alguns passos para que isso seja possível
+
+1 - Criar uma pasta dentro do diretório principal onde OBRIGATORIAMENTE tem que se chamar
+                                    "static"
+
+2 - Após colocar seus arquivos de imagem dentro da pasta static, no arquivo HTML ou CSS
+use a seguinte estrutura para carregar a imagem:
+<img src="{{url_for('nome_da_pasta',filename='nome_do_arquivo')}}" alt="logo css">
+2.a - Abra a tag <img> </img>
+2.b - Em src que significa source coloque o caminho da pasta que deve ser static entre
+      chaves duplas '{{ }}'
+2.c - Dentro das chaves duplas, a url_for que será o caminho da pasta
+2.d - Dentro do parenteses e aspas simples, coloque o nome da pasta 'static'
+2.e - após a vírgula, em filename coloque o nome do arquivo com a extensão
+2.f - Em alt é o nome para encontrar o arquivo no html

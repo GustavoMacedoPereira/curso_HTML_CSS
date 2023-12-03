@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Listas</title>
+    <link rel="shortcut icon" href="{{url_for('static', filename='meu_logo_re.ico')}}" type="image/x-icon">
+    <style>
+        a {
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <a href="http://127.0.0.1:5000/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/contacts">contatos</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Introdução">introdução</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Parágrafos">Parágrafos</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Simbolos e emojis">Simbolos e emojis</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/static">static</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/favorito">favorito</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/títulos">títulos</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Formatação">Formatação</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Marcação de texto">Marcação de texto</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Outras formatações">Outras formatações</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Listas">Listas</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Links">Links</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <h1>Listas</h1>
+    <h2>Listas ordenadas</h2>
+    <p>Para usar listas de forma mais inteligente em HTML usamos a ta &lt;ol&gt;ol&lt;/ol&gt; de Order List com a tag  &lt;li&gt;li&lt;/li&gt; de list item para organizar uma lista </p>
+    <h4>Exemplo:</h4>
+    <ol>
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os Dentes</li>
+        <li>Estuar</li>
+        <li>Me arrumar</li>
+        <li>Sair para o trabalho</li>
+    </ol>
+    <p>Podemos alterar a formatação da lista dentro da tag ol</p>
+    <hr>
+    <h4>Exemplo: Com números partindo de 2</h4>
+    <ol type="1" start="2">
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os Dentes</li>
+        <li>Estuar</li>
+        <li>Me arrumar</li>
+        <li>Sair para o trabalho</li>
+    </ol>
+    <hr>
+    <h4>Exemplo: Com letras Maiúsculas</h4>
+    <ol type="A">
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os Dentes</li>
+        <li>Estuar</li>
+        <li>Me arrumar</li>
+        <li>Sair para o trabalho</li>
+    </ol>
+    <hr>
+    <h4>Exemplo: Com letras Minúsculas</h4>
+    <ol type="a">
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os Dentes</li>
+        <li>Estuar</li>
+        <li>Me arrumar</li>
+        <li>Sair para o trabalho</li>
+    </ol>
+    <hr>
+    <h4>Exemplo: Com Números romanos maiúsculos</h4>
+    <ol type="I">
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os Dentes</li>
+        <li>Estuar</li>
+        <li>Me arrumar</li>
+        <li>Sair para o trabalho</li>
+    </ol>
+    <hr>
+    <h4>Exemplo: Com Números romanos minúsculos</h4>
+    <ol type="i">
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os Dentes</li>
+        <li>Estuar</li>
+        <li>Me arrumar</li>
+        <li>Sair para o trabalho</li>
+    </ol>
+    <hr>
+    <h2>Listas não ordenadas</h2>
+    <p>Para usar listas de forma mais inteligente em HTML usamos a ta &lt;ul&gt;ul&lt;/ul&gt; de Order List com a tag  &lt;li&gt;li&lt;/li&gt; de list item </p>
+    <h4>Exemplo: Usando um ponto</h4>
+    <ul type="disc">
+            <li>Acordar</li>
+            <li>Tomar café</li>
+            <li>Escovar os Dentes</li>
+            <li>Estuar</li>
+            <li>Me arrumar</li>
+            <li>Sair para o trabalho</li>
+        </ul>
+    <hr>
+    <h4>Exemplo: Usando um circulo</h4>
+    <ul type="circle">
+            <li>Acordar</li>
+            <li>Tomar café</li>
+            <li>Escovar os Dentes</li>
+            <li>Estuar</li>
+            <li>Me arrumar</li>
+            <li>Sair para o trabalho</li>
+        </ul>
+    <hr>
+    <h4>Exemplo: Usando um quadrado</h4>
+    <ul type="square">
+            <li>Acordar</li>
+            <li>Tomar café</li>
+            <li>Escovar os Dentes</li>
+            <li>Estuar</li>
+            <li>Me arrumar</li>
+            <li>Sair para o trabalho</li>
+        </ul>
+</body>
+<body>
+<hr>
+    <h1>JUNÇÃO DE LISTAS</h1>
+    <h2>Minhas músicas favoritas</h2>
+    <ul type="circle">
+        <li>Brasileiras
+        <ul>Pontes indestrutiveis ------------Charlie brow Jr</ul>
+        <ul>Eu não sou de me entregar --------Ferrugem</ul>
+        <ul>Vampiro --------------------------Matuê</ul>
+        <ul>Faroeste caboclo -----------------Legião urbana</ul>
+        </li>
+    </ul>
+    <ul type="circle">
+        <li>Internacionais</li>
+        <ul>Industry baby  - Lil Nas X</ul>
+        <ul>No rule Modelz - J.Cole</ul>
+        <ul>Heat waves - Glass Animals</ul>
+        <ul>Lonely boy - Black keys</ul>
+
+    </ul>
+</body>
+</html>

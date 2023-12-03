@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale-1.0">
+    <link rel="shortcut icon" href="{{url_for('static', filename='meu_logo_re.ico')}}" type="image/x-icon">
+    <title>Imagens</title>
+    <style>
+            a {
+                text-decoration: none;
+    </style>
+</head>
+<body>
+    <p>
+        <a href="http://127.0.0.1:5000/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/contacts">contatos</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Introdução">introdução</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Parágrafos">Parágrafos</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Simbolos e emojis">Simbolos e emojis</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/static">static</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/favorito">favorito</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/títulos">títulos</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Formatação">Formatação</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Marcação de texto">Marcação de texto</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/outras formatações">Outras formatações</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Listas">Listas</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://127.0.0.1:5000/Links">Links</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    </p>
+    <p>testando imagens</p>
+    <img src="{{url_for('static',filename='logo_css.png')}}" alt="logo css" width="150" height="200">
+    <img src="{{url_for('static', filename='logo_html_modify.png')}}" alt="logo html" width="150" height="200">
+    <!-- Para colocar imagens da internet fazemos um processo parecido mas usando a URL da imagem -->
+    <img src="data:image/jpeg;base64,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"
+         alt="logo python">
+    <img src="{{url_for('static', filename='genio.gif')}}" alt="gif genio" width="250" heigth="500">
+</body>
+</html>
