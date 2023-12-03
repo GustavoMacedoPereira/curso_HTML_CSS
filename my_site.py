@@ -53,5 +53,8 @@ def lista():
 @app.route("/Links")
 def link():
     return render_template("index010.html")
+
+#Deu certo
+
 if __name__ == "__main__":
     app.run(debug=True)
