@@ -56,5 +56,12 @@ def link():
 
 if __name__ == "__main__":
     app.run(debug=True)
-print("teste")
+
 # Colocando o site no ar no servidor da heroku
+"""
+COLOCAR ESSES COMANDOS NO TERMINAL:
+git add . 
+git commit -am "NOME DA NOVA VERSÃO"
+git push heroku master
+
+"""
